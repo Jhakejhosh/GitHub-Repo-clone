@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul, a {
+  list-style-type: none;
+  text-decoration: none;
+}
+input {
+  outline: none;
+  border: none;
+}
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.section {
+  background-color: rgba(213, 213, 213, 0.3);
+  max-width: 100%;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  border-bottom: 1px solid rgba(213, 213, 213, 0.6);
+}
+.nav-menu, .header-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fabar {
+  display: none;
+}
+.gitHub {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+.header-list li {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0.5rem;
+  outline: none;
+  transition: 0.5s ease;
+}
+.header-list li:hover {
+  color: rgb(0, 0, 0);
+}
+.input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.input input {
+  border: none;
+  background-color: white;
+  padding: 0.6rem 0.5rem;
+  max-width: 100%;
+  border-radius: 5px;
+  outline: none;
+}
+.input .search {
+  position: absolute;
+  right: 0.5rem;
+}
+.searchBar {
+  color: rgba(0, 0, 0, 0.5);
+}
+.searchBar:hover {
+  color: rgb(0, 0, 0);
+}
+.main {
+  padding: 2rem 4rem;
+  max-width: 100%;
+  display: flex;
+}
+.repo-main {
+  background-color: white;
+  padding: 1rem;
+  width: 30%;
+}
+.repo-main header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.repo-main header button {
+  background-color: green;
+  color: white;
+  padding: 0.6rem;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.faBook {
+  margin-right: 0.4rem;
+}
+.recent h3 {
+  margin-bottom: 1rem;
+}
+.recent .content {
+  border: 2px solid rgba(213, 213, 213, 0.7);
+  border-radius: 5px;
+  padding: 0.3rem;
+}
+.repo-main input {
+  width: 100%;
+  background-color: rgba(213, 213, 213, 0.7);
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.repos-list {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(213, 213, 213, 0.3);
+  overflow-y: scroll;
+}
+.repo-list li {
+  margin-bottom: 0.5rem;
+}
+.repo-list li a {
+  font-size: 12px;
+}
+.feed-main {
+  padding: 0 1.5rem;
+  width: 100%;
+}
+.feed-details{
+  margin-top: 1rem;
+  background-color: white;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.feed-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feed-details header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.feed-details header p a {
+  color: rgba(0, 0, 0, 0.7);
+}
+.feed-details header p a:hover {
+  color: black;
+}
+.feed-details header small{
+  color: rgba(0, 0, 0, 0.5);
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: black;
+  margin-right: 1rem;
+}
+header small span {
+  background-color: rgba(213, 213, 213, 0.8);
+  color: black;
+  font-size: 10px;
+  font-weight: bolder;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.starred {
+  background-color: orange;
+  padding: 0.7rem 0.5rem;
+  border-radius: 5px;
+}
+.starred a {
+  color: white;
+}
+.red {
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-left: 0.2rem;
+}
+.feed-int {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer {
+  padding: 2rem 5rem;
+  background-color: rgba(213, 213, 213, 0.7);
+}
+.bulb, .sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub p {
+  margin-left: 0.3rem;
+}
+.write {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.loader {
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.97);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.modal {
+  background-color: white;
+  width: 50%;
+  padding: 1rem;
+  border-radius: 5px;
+}
+.modal header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.github {
+  font-size: 35px;
+}
+.modal header span {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.modalInput {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.modalInput input {
+  width: 100%;
+  background-color: rgba(213, 213, 213, 0.8);
+  padding: 0.8rem;
+  border-radius: 5px;
+}
+.modalInput button {
+  position: absolute;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 0 5px 5px 0;
+}
+
+
+
+
+@media screen and (max-width:768px){
+  .header-list {
+    transition: 0.5s;
+    display: block;
+    background-color: white;
+    position: absolute;
+    padding: 1rem;
+    z-index: 10px;
+    bottom: -56px;
+    right: -100%;
+    height: 100%;
+    width: 80%;
+  }
+  .section {
+    height: 100%;
+    overflow: hidden;
+  }
+  .active {
+    right: 0;
+  }
+  .nav {
+    padding: 0.7rem 0.7rem;
+    z-index: 10px;
+  }
+  .fabar {
+    display: block;
+  }
+  .faBar {
+    font-size: 1.5rem;
+  }
+  .main {
+    padding: 0.7rem;
+    display: block;
+  }
+  .feed-main {
+    margin: 0;
+    padding: 00.5rem;
+  }
+  .repo-list li a {
+    font-size: 18px;
+  }
+  .repo-main {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .recent .content {
+    padding: 1rem;
+  }
+  footer {
+    padding: 1.5rem 1rem;
+  }
+  .write {
+    display: block;
+  }
+  .bulb {
+    display: block;
+    margin-bottom: 2rem;
+  }
+  .sub {
+    display: block;
+  }
+  .loader {
+    height: 100%;
+    overflow: hidden;
+  }
+  .modal {
+    position: absolute;
+    top: 15%;
+    width: 90%;
+  }
+}
